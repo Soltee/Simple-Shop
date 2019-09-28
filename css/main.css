@@ -290,13 +290,82 @@ align-items: center;padding-bottom: 5px;}
 	background-color: #FF0032;
 	color: #fff;
 }
+
+/*Menu PAGE*/
+.menu_sec{
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.menu_header-div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.momo-header{color: #FF0032;}
+.menu-items-wrapper{position: relative;}
+.menu-momo-div{
+/*	position: absolute;
+	top: 0;
+	left: 0;*/
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.menu-momo{
+	position: relative;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.menu-item{
+	width: 240px;
+	height: 170px;
+	object-fit: cover;
+}
+
+.menu-drinks-div{
+	display: flex;
+	flex-wrap: wrap;
+/*	display: none;
+*/}
+.menu-drinks{ position: relative; margin-bottom: 20px; padding: 10px; box-sizing: border-box;}
+.offer{
+ position: absolute;
+ top: -15px;
+ right: 0;
+ background-color: rgb(248, 31, 39);
+ color: #fff;
+ font-size: 18px;
+ padding:10px;
+width: 120px;
+
+text-align: center;
+}
+
+.menu-momo-div .add-cart-btn, .menu-drinks-div .add-cart-btn{
+	background-color: #000;
+}
+
+.menu-select{
+	display: block;
+}
 /*ABout PAGE*/
 .about-sec{
 	max-width: 1080px;
 	margin: 0 auto;
 	padding: 10px;
 }
-
+.about-title, .about-how{color: #FF0032;}
+.about-words{
+	color: rgb(234, 30, 67);
+	text-align: justify;
+}
 .about-how_process{
 	display: flex;
 	flex-direction: column;
@@ -375,6 +444,7 @@ align-items: center;padding-bottom: 5px;}
 	flex-direction: row;
 	flex-grow: 1;
 }
+.item_name, .item_cat{color: rgb(255, 0, 50);}
 #item_add_form,.item_detail, .item_image{
 	display: flex;
 	flex-direction: column;
@@ -404,6 +474,7 @@ align-items: center;padding-bottom: 5px;}
 
 .item_image{
 	position: relative;
+	height: 400px;
 }
 .item_image-type{
 	position: absolute;
@@ -414,6 +485,19 @@ align-items: center;padding-bottom: 5px;}
 	font-size: 18px; 
 	padding: 20px 12px;
 	border-radius: 50%;
+}
+
+.also_title{color: rgb(255, 0, 50);}
+
+.also-items{
+	display: flex;
+	margin-top: 30px;
+}
+.menu-momo{
+	position: relative;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	padding: 10px;
 }
 /*cart*/
 .item-sec{
@@ -748,6 +832,8 @@ justify-content: space-between;}
 
 /*Login*/
 .login-sec{
+	max-width: 1080px;
+	margin: 0 auto;
 	padding: 10px;
 	width: 100%;
 	box-sizing: border-box;

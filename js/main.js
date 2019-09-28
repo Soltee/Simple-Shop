@@ -1,10 +1,9 @@
 window.addEventListener('load', ()=>{
-	// new SimpleBar(document.getElementById('myElement'));
+
 	const nav = document.querySelector('.nav');
+
 	document.querySelector('.menu-icon-link').addEventListener('click', (e)=>{
-		console.log(nav);
 		nav.classList.toggle('open-nav');
-		console.log(nav);
 	});
 
 	var x, i, j, selElmnt, a, b, c;
@@ -79,4 +78,14 @@ window.addEventListener('load', ()=>{
 		/*if the user clicks anywhere outside the select box,
 		then close all select boxes:*/
 		document.addEventListener("click", closeAllSelect);
+
+	const menuHeader = document.querySelector('.momo-header');
+	const menus = document.getElementById('menus');
+	const menuMomo = document.querySelector('.menu-momo-div');
+	const menuDrink = document.querySelector('.menu-drinks-div');
+
+	console.log(menus.selectedIndex);
+	menus.addEventListener('click', (e) => {
+		console.log(menus.selectedIndex);
+	});
 });
